@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "9aad25c4bd3a36a91acac15631456df5",
+    "content-hash": "c3aebe36a7673dd54b25876d39cdf660",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -1006,6 +1006,94 @@
             "time": "2017-12-26T14:43:21+00:00"
         },
         {
+            "name": "overtrue/flysystem-qiniu",
+            "version": "0.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/overtrue/flysystem-qiniu.git",
+                "reference": "7450e6f720b1ecd2ae4125aa87e675495f6df81a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://files.phpcomposer.com/files/overtrue/flysystem-qiniu/7450e6f720b1ecd2ae4125aa87e675495f6df81a.zip",
+                "reference": "7450e6f720b1ecd2ae4125aa87e675495f6df81a",
+                "shasum": ""
+            },
+            "require": {
+                "league/flysystem": "^1.0",
+                "php": ">=5.5.9",
+                "qiniu/php-sdk": "^7.1"
+            },
+            "require-dev": {
+                "mockery/mockery": "1.0.x-dev",
+                "php": ">=5.6.0",
+                "phpunit/phpunit": "~4.8"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Overtrue\\Flysystem\\Qiniu\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "overtrue",
+                    "email": "i@overtrue.me"
+                }
+            ],
+            "description": "Flysystem adapter for the Qiniu storage.",
+            "time": "2017-08-23T02:39:17+00:00"
+        },
+        {
+            "name": "overtrue/laravel-filesystem-qiniu",
+            "version": "0.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/overtrue/laravel-filesystem-qiniu.git",
+                "reference": "d4e72f0a86557647652d16300e03578eebc82d26"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://files.phpcomposer.com/files/overtrue/laravel-filesystem-qiniu/d4e72f0a86557647652d16300e03578eebc82d26.zip",
+                "reference": "d4e72f0a86557647652d16300e03578eebc82d26",
+                "shasum": ""
+            },
+            "require": {
+                "league/flysystem": "^1.0",
+                "overtrue/flysystem-qiniu": "~0.0.2",
+                "php": ">=5.5.9"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Overtrue\\LaravelFilesystem\\Qiniu\\QiniuStorageServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Overtrue\\LaravelFilesystem\\Qiniu\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "overtrue",
+                    "email": "i@overtrue.me"
+                }
+            ],
+            "description": "A Qiniu storage filesystem for Laravel.",
+            "time": "2017-07-02T22:10:38+00:00"
+        },
+        {
             "name": "paragonie/random_compat",
             "version": "v2.0.11",
             "source": {
@@ -1270,6 +1358,57 @@
             "time": "2017-12-28T16:14:16+00:00"
         },
         {
+            "name": "qiniu/php-sdk",
+            "version": "v7.2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/qiniu/php-sdk.git",
+                "reference": "79290fd9cb5d72cc2feef779008b3aaeeac49eb9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://files.phpcomposer.com/files/qiniu/php-sdk/79290fd9cb5d72cc2feef779008b3aaeeac49eb9.zip",
+                "reference": "79290fd9cb5d72cc2feef779008b3aaeeac49eb9",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0",
+                "squizlabs/php_codesniffer": "~2.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Qiniu\\": "src/Qiniu"
+                },
+                "files": [
+                    "src/Qiniu/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Qiniu",
+                    "email": "sdk@qiniu.com",
+                    "homepage": "http://www.qiniu.com"
+                }
+            ],
+            "description": "Qiniu Resource (Cloud) Storage SDK for PHP",
+            "homepage": "http://developer.qiniu.com/",
+            "keywords": [
+                "cloud",
+                "qiniu",
+                "sdk",
+                "storage"
+            ],
+            "time": "2017-11-07T06:12:11+00:00"
+        },
+        {
             "name": "ramsey/uuid",
             "version": "3.7.1",
             "source": {
@@ -1357,12 +1496,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ScoLib/admin.git",
-                "reference": "326de9d1e26a0a1f44981cb1f0b9f412e46fea0f"
+                "reference": "4aebd78e4fa2c55b001d33db90e7d020127a0a01"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/ScoLib/admin/326de9d1e26a0a1f44981cb1f0b9f412e46fea0f.zip",
-                "reference": "326de9d1e26a0a1f44981cb1f0b9f412e46fea0f",
+                "url": "https://files.phpcomposer.com/files/ScoLib/admin/4aebd78e4fa2c55b001d33db90e7d020127a0a01.zip",
+                "reference": "4aebd78e4fa2c55b001d33db90e7d020127a0a01",
                 "shasum": ""
             },
             "require": {
@@ -1421,20 +1560,20 @@
                 "ScoLib",
                 "admin"
             ],
-            "time": "2017-12-30T09:07:59+00:00"
+            "time": "2017-12-31T13:55:48+00:00"
         },
         {
             "name": "spatie/laravel-permission",
-            "version": "2.7.6",
+            "version": "2.7.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-permission.git",
-                "reference": "03eb748141432b5d94eb1613b99f818aac1f5070"
+                "reference": "afce2b8892877af2fe80c31670a102a36016fb32"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/spatie/laravel-permission/03eb748141432b5d94eb1613b99f818aac1f5070.zip",
-                "reference": "03eb748141432b5d94eb1613b99f818aac1f5070",
+                "url": "https://files.phpcomposer.com/files/spatie/laravel-permission/afce2b8892877af2fe80c31670a102a36016fb32.zip",
+                "reference": "afce2b8892877af2fe80c31670a102a36016fb32",
                 "shasum": ""
             },
             "require": {
@@ -1486,7 +1625,7 @@
                 "security",
                 "spatie"
             ],
-            "time": "2017-11-27T10:22:46+00:00"
+            "time": "2017-12-31T21:28:46+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -3738,6 +3877,56 @@
                 "xunit"
             ],
             "time": "2017-12-10T08:01:53+00:00"
+        },
+        {
+            "name": "predis/predis",
+            "version": "v1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nrk/predis.git",
+                "reference": "f0210e38881631afeafb56ab43405a92cafd9fd1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://files.phpcomposer.com/files/nrk/predis/f0210e38881631afeafb56ab43405a92cafd9fd1.zip",
+                "reference": "f0210e38881631afeafb56ab43405a92cafd9fd1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.9"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.8"
+            },
+            "suggest": {
+                "ext-curl": "Allows access to Webdis when paired with phpiredis",
+                "ext-phpiredis": "Allows faster serialization and deserialization of the Redis protocol"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Predis\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniele Alessandri",
+                    "email": "suppakilla@gmail.com",
+                    "homepage": "http://clorophilla.net"
+                }
+            ],
+            "description": "Flexible and feature-complete Redis client for PHP and HHVM",
+            "homepage": "http://github.com/nrk/predis",
+            "keywords": [
+                "nosql",
+                "predis",
+                "redis"
+            ],
+            "time": "2016-06-16T16:22:20+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
