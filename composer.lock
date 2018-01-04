@@ -1496,12 +1496,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ScoLib/admin.git",
-                "reference": "4aebd78e4fa2c55b001d33db90e7d020127a0a01"
+                "reference": "9fae324de6a52ec1fbdcfe4b518da15f61d1cff8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/ScoLib/admin/4aebd78e4fa2c55b001d33db90e7d020127a0a01.zip",
-                "reference": "4aebd78e4fa2c55b001d33db90e7d020127a0a01",
+                "url": "https://files.phpcomposer.com/files/ScoLib/admin/9fae324de6a52ec1fbdcfe4b518da15f61d1cff8.zip",
+                "reference": "9fae324de6a52ec1fbdcfe4b518da15f61d1cff8",
                 "shasum": ""
             },
             "require": {
@@ -1560,20 +1560,20 @@
                 "ScoLib",
                 "admin"
             ],
-            "time": "2017-12-31T13:55:48+00:00"
+            "time": "2018-01-02T09:48:51+00:00"
         },
         {
             "name": "spatie/laravel-permission",
-            "version": "2.7.7",
+            "version": "2.7.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-permission.git",
-                "reference": "afce2b8892877af2fe80c31670a102a36016fb32"
+                "reference": "e63427e4c364061f05f03fc893727198669c43c7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/spatie/laravel-permission/afce2b8892877af2fe80c31670a102a36016fb32.zip",
-                "reference": "afce2b8892877af2fe80c31670a102a36016fb32",
+                "url": "https://files.phpcomposer.com/files/spatie/laravel-permission/e63427e4c364061f05f03fc893727198669c43c7.zip",
+                "reference": "e63427e4c364061f05f03fc893727198669c43c7",
                 "shasum": ""
             },
             "require": {
@@ -1625,7 +1625,7 @@
                 "security",
                 "spatie"
             ],
-            "time": "2017-12-31T21:28:46+00:00"
+            "time": "2018-01-02T16:39:56+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
